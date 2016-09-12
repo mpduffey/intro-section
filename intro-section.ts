@@ -6,11 +6,11 @@ import {Component} from '@angular/core';
 		<section id="intro" class="intro-fullscreen">
 			<div class="intro-media overlay-dark20"></div>
 			<div class="intro-caption-waper dark-bg">
-				<div class="intro-full-height container">
+				<div class="intro-full-height container" style="min-height: 500px; height: 100%;">
 					<div class="intro-content">
 						<div class="intro-content-inner">
-							<h1 class="intro-title mb-10">Wisconsin Women for Trump</h1>
-							<a class="btn btn-lg btn-white scroll-down" href="#Statement1">I Support Donald Trump!</a>
+<!--							<h1 class="intro-title mb-10">Wisconsin Women for Trump</h1>
+							<a class="btn btn-lg btn-white scroll-down" href="#Statement1">I Support Donald Trump!</a> -->
 						</div>
 					</div>
 				</div>
