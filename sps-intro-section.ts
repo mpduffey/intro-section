@@ -1,7 +1,7 @@
-import {Component} from '@angular/core';
+import {Component, Input} from '@angular/core';
 
 @Component({
-	selector:				'intro-section',
+	selector:				'sps-intro-section',
 	template:				`
 		<section id="intro" class="intro-fullscreen">
 			<div class="intro-media overlay-dark20"></div>
@@ -9,8 +9,8 @@ import {Component} from '@angular/core';
 				<div class="intro-full-height container" style="min-height: 500px; height: 100%;">
 					<div class="intro-content">
 						<div class="intro-content-inner">
-							<h1 class="intro-title mb-10">Wisconsin Women for Trump</h1>
-							<a class="btn btn-lg btn-white scroll-down" href="https://docs.google.com/forms/d/e/1FAIpQLSfjiqYbdEAR7KZbRGCiiJCGUIsr-QR2tZnSKVl2o5qs0vtaTQ/viewform" target="_blank">I Support Donald Trump! Sign Me Up!</a>
+							<h1 class="intro-title mb-10">{{title}}</h1>
+							<a class="btn btn-lg btn-white scroll-down" href="{{buttonLink}}" target="_blank">{{buttonTitle}}</a>
 						</div>
 					</div>
 				</div>
@@ -37,4 +37,8 @@ import {Component} from '@angular/core';
 	`]
 })
 
-export class IntroSection {}
+export class SpsIntroSection {
+	@Input() title;
+	@Input('button-title') buttonTitle;
+	@Input('button-link') buttonLink;
+}
